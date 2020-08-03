@@ -1,0 +1,38 @@
+An application where users can create, read and update
+
+Interface
+  user can view form
+  user can submit order
+  user can edit order
+  user can delete order
+
+User class
+  attributes "name, password"
+  user sign up/ login
+  has many orders
+
+User controller and views
+  render sign up form
+  process sign up form, create user or post
+  render login form
+  process login form
+  set session
+  can view the orders
+
+Order class
+  how much water in a day
+
+Order controller and views
+  render new order form
+  submit order
+  render all order
+  render one instance
+  render update form and instance
+  update instance
+  deletes instance
+
+Procedure
+  set up classes
+  set up my database
+  users controller
+  the order
