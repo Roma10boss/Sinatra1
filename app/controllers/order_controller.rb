@@ -18,4 +18,9 @@ class OrderController < ApplicationController
     erb :'/orders/show'
   end
 
+  post 'orders/:id' do
+    @order =Order.all #return an array
+    erb :'/orders/index'
+  end
+
 end
