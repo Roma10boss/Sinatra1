@@ -5,7 +5,7 @@ class UserController < ApplicationController
   end
 
   #where a user object is created
-  post '/users' do
+  post '/signup' do
     @user =User.create(username: params[:username], password: params[:password])
     #to redirect the user to the show page after signup
     #redirect "/users/#{@user.id}"
