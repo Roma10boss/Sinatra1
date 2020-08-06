@@ -8,7 +8,8 @@ class UserController < ApplicationController
   post '/users' do
     @user =User.create(username: params[:username], password: params[:password])
     #to redirect the user to the show page after signup
-    redirect "/users/#{@user.id}"
+    #redirect "/users/#{@user.id}"
+    erb :index
   end
 
   #dynamic route to create a user id for the show page to render data
