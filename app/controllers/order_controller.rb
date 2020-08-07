@@ -23,4 +23,22 @@ class OrderController < ApplicationController
     erb :'/orders/index'
   end
 
+
+  #Update
+  get 'orders/:id/edit' do
+    @order = Order.find(params[:id])
+    erb :'/orders/edit'
+  end
+
+
+  patch 'orders/:id' do
+    @order = Order.find(params[:id])
+    @order.update(  botlle: params[:bottle],
+      ounces: params[:ounces]
+      )
+      redirect "/orders/#{order.id}"
+  end
+
+
+
 end

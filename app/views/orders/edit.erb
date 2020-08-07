@@ -1,0 +1,12 @@
+<h1>order form:</h1>
+
+<form action="/orders/<%@=order.id%>" method="POST">
+  <input id="hidden" type="hidden" name="method" value="patch">
+
+    Bottle: <input type=number value="<%@order.botlle" name="bottle">
+    Ounces: <input type=number value="<%@order.ounces" name="ounces">
+    <input type=Submit>
+
+
+
+</form>

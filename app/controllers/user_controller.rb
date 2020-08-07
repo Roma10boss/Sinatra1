@@ -13,12 +13,8 @@ class UserController < ApplicationController
   end
 
   #dynamic route to create a user id for the show page to render data
-  get '/users/:id' do
+  get '/signup/id' do
     @user= User.find(params[:id])
-    erb :'/users/show'
+    erb :show
   end
-
-
-
-
 end
