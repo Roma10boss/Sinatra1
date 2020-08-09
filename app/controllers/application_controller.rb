@@ -38,4 +38,11 @@ class ApplicationController < Sinatra::Base
      !!session[:user_id]
    end
 end
+
+get '/data' do
+erb :data
+end
+
+post '/data' do
+end
 end
