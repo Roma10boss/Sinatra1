@@ -17,4 +17,12 @@ class UserController < ApplicationController
     @user= User.find(params[:id])
     erb :show
   end
+
+  get '/logout' do
+    erb :logout
+  end
+
+  post '/logout' do
+    erb :logout
+  end
 end
